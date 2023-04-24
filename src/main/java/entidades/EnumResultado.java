@@ -1,4 +1,4 @@
-package ar.utn.ap.pronosticos;
+package entidades;
 
 public enum EnumResultado {
 	GANADOR,PERDEDOR,EMPATE

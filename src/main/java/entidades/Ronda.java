@@ -1,4 +1,4 @@
-package ar.utn.ap.pronosticos;
+package entidades;
 
 public class Ronda {
     private String nro;

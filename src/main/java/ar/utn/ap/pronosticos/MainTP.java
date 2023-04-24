@@ -1,5 +1,10 @@
 package ar.utn.ap.pronosticos;
 
+import entidades.EnumResultado;
+import entidades.Equipo;
+import entidades.Partido;
+import entidades.Pronostico;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -14,6 +19,7 @@ public class MainTP {
 		// Leer resultados
 		Collection<Partido> partidos = new ArrayList<Partido>();
 
+		//"C:\\Users\\Usuario\\Desktop\\tpi\\pronosticos\\src\\test\\resources\\resultados_test1.csv">
 		Path pathResultados = Paths.get(args[0]);
 		List<String> lineasResultados = null;
 		try {

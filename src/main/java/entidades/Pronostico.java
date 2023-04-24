@@ -1,4 +1,4 @@
-package ar.utn.ap.pronosticos;
+package entidades;
 
 public class Pronostico {
 	private Partido partido;
