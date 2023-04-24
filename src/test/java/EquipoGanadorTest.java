@@ -6,13 +6,11 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class EquipoGanadorTest {
-    //ToDo metodo que en funcion de un partido diga quien gano
+    //método que en función de un partido dice quien ganó
     private Equipo equipo1;
     private Equipo equipo2;
     private int golesEq1;
     private int golesEq2;
-
-    //ToDo @Before
 
     @Test
     public void VerificarEquipoGanador(){
@@ -22,6 +20,4 @@ public class EquipoGanadorTest {
 
         assertEquals(EnumResultado.GANADOR, partido.resultado(equipo1));
     }
-
-    //Todo public void VerificarEquipoPerdedor(){
 }

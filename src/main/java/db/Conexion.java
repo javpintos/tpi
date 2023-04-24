@@ -9,11 +9,13 @@ public class Conexion {
     private static String host = "localhost";
     private static String port = "3306";
     private static String db = "pronosticos";
+    private static String user = "root";
+    private static String password = "admin";
 
     public static Connection getConexion() throws SQLException {
         if(conexion == null) {
-           conexion = DriverManager.getConnection("jdbc:mysql://"+host+":"+port+"/"+db, "root", "admin");
-            System.out.println("Conexion establecida con bd: "+db);
+           conexion = DriverManager.getConnection("jdbc:mysql://"+host+":"+port+"/"+db, user, password);
+           System.out.println("Conexion establecida con bd: "+db);
         }
         return conexion;
     }

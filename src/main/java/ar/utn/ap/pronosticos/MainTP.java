@@ -19,8 +19,8 @@ public class MainTP {
 		// Leer resultados
 		Collection<Partido> partidos = new ArrayList<Partido>();
 
-		//"C:\\Users\\Usuario\\Desktop\\tpi\\pronosticos\\src\\test\\resources\\resultados_test1.csv">
 		Path pathResultados = Paths.get(args[0]);
+		//Path pathResultados = Paths.get("src\\test\\resources\\resultados_test1.csv");
 		List<String> lineasResultados = null;
 		try {
 			lineasResultados = Files.readAllLines(pathResultados);
